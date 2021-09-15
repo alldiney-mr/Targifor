@@ -1,0 +1,122 @@
+.header{
+    &__sanofi{
+        width: 5em;
+        margin: .2em .4em .2em 75vw;
+    }
+
+    &__targifor{
+        width: 12em;
+        margin: .7em;
+
+        @media (min-width: 768px){
+            height: 5em;
+        }
+    }
+
+    &__container{
+        border-top: 1px solid $color-grey;
+        display: flex;
+        justify-content: space-between;
+
+        @media (min-width: 768px){
+            display: flex;
+            justify-content: start;
+
+        }
+    }
+
+    &__nav{
+        display: none;
+
+        @media (min-width: 768px){
+            display: block;
+            display: flex;
+            flex-direction: row;
+            margin: 0 7em;
+        }
+    }
+
+    
+    &__list{
+        display: flex;
+        width: 100%;
+        background-color: $color-white;
+        text-align: center;
+        margin: 2em;
+
+    }
+
+    &__item{
+        margin: 1em;
+        text-transform: uppercase;
+    }
+
+    &__icons{
+        width: 2em;
+        height: 2em;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        margin: 1em 0 0 10em;
+
+        &::before{
+            content: 'Siga:';
+            display: inline;
+            color: $color-blue;
+        }
+    }
+
+    &__icom{
+        width: 2em;
+        height: 2em;
+        position: relative;
+        margin: .2em;
+        bottom: 10px;
+        left: 15px;
+    }
+
+    &__hamburguer{
+        margin: 1em 2em;
+        background: $color-orange;
+        border-radius: 15%;
+        width: 60px;
+        height: 40px;
+    
+        @media (min-width: 768px){
+            display: none;
+        }
+
+        &__click{
+            position: relative;
+            display: block;
+            background-color: $color-white;
+            width: 2.5em;
+            height: .2em;
+            top: 20px;
+            left: 10.2px;
+
+            &::before{
+                content: '';
+                display: block;
+                background-color: $color-white;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -7.5px;
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                background-color: $color-white;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: -7.5px;
+            }
+
+        }
+    }
+
+
+}
