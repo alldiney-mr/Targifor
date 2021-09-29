@@ -5,36 +5,57 @@
     height: 45em;
     display: flex;
     justify-content: center;
+
+    &__borda{
+        margin: 7em 0;
+        position: absolute;
+        width: 80%;
+        height: 50%;
+        border: 2px solid #F47D31;
+        transform: skewX(-25deg);
+        padding: 0 2em;
+        
+    }
+
+    &__img{
+        height: 100%;
+        width: 95%;
+        overflow: hidden;
+        position: absolute;  
+    }
     
     &__imagem{
-        height: 70%;
-        width: 95%;
-        margin: 6em 0;
-        position: absolute;
-        padding: 2em;
-        border: 2px solid #F47D31;
+        height: 100%;
+        width: 120em;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        bottom: 0;
+        right: 100px;
+        transform: skewX(25deg);
     }
 
     &__text{
-        width: 100%;
+        width: 70%;
         display: inline-block;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-self: flex-end;
         position: relative;
-        font-size: 5em;
-        letter-spacing: .08em;
-        text-transform: uppercase;
+        bottom: 250px;
         color: $color-white;
         font-family: 'Bebas Neue', cursive;
+        font-size: 4em;
         font-weight: 600;
-        bottom: 130px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
 
         ::before{
             content: url(/assets/images/iconmais.png);
             position: relative;
-            top: 33px;
+            top: 25px;
+            right: 15px;
         }
     }
 }
