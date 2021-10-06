@@ -1,4 +1,5 @@
 .footer{
+    width: 100%;
     @media (min-width: $tablet-min){
             
     }
@@ -15,10 +16,10 @@
     }
     
     &__fundo{
-        background: $color-blue;
-        background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
+        background-color: $color-blue-light;
         display: flex;
-        justify-content: space-between;
+        width: 100%;
+        // justify-content: space-evenly;
         flex-direction: row;
         text-transform: uppercase;
         color: $color-white;
@@ -29,26 +30,24 @@
     &__informacoes{
         border-right: $color-white solid 3px;
         width: 65%;
-        height: 30em;
+        // height: 30em;
     }
 
     &__nav{
+        background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
         width: 100%;
         margin: 0 auto;
-        justify-content: center;
-        padding: 0 70px;
+        justify-content: left;
     }
     
     &__list{
         // background-color: red;
         display: flex;
-        padding: 10px 0;
-        justify-content: center;
-        
+        padding: 20px 0;        
     }
 
     &__item{
-        padding: 1px 50px;
+        padding: 1px 70px;
 
         &Borda{
             padding: 0 50px;
@@ -58,7 +57,7 @@
     }
 
     &__sintomas{
-        width: 100%;
+        // width: 100%;
         height: 79%;
         padding: 50px 70px;
         background-color: $color-blue-light;
@@ -87,5 +86,49 @@
         font-size: 12px;
         width: 52%;
         color: $color-blue;
+        line-height: 20px;
+    }
+
+    &__contato{
+        width: 40%;
+    }
+
+    &__link{
+        background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
+        width: 100%;
+        padding: 21px 0;
+        text-align: center;
+    }
+
+    &__atendimento{
+        width: 300px;
+        margin-top: 40px;
+        border: $color-white 2px solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &Logo{
+            width: 4em;
+            display: block;
+            margin-right: 5px;
+        }
+    }
+
+    &__endereco{
+        width: 300px;
+        margin-top: 40px;
+        border: $color-white 2px solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &Logo{
+            width: 4em;
+            display: block;
+            margin-right: 10px;
+        }
     }
 }
