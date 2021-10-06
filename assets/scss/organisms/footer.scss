@@ -1,0 +1,91 @@
+.footer{
+    @media (min-width: $tablet-min){
+            
+    }
+
+    @media (min-width: $tablet-max){
+
+    }
+    &__referencia{
+        background-color: lighten($color-orange, 16%);
+        padding: 45px 70px;
+        color: $color-white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    
+    &__fundo{
+        background: $color-blue;
+        background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-transform: uppercase;
+        color: $color-white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    &__informacoes{
+        border-right: $color-white solid 3px;
+        width: 65%;
+        height: 30em;
+    }
+
+    &__nav{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 0 70px;
+    }
+    
+    &__list{
+        // background-color: red;
+        display: flex;
+        padding: 40px 0;
+        justify-content: center;
+        
+    }
+
+    &__item{
+        padding: 1px 50px;
+
+        &Borda{
+            padding: 0 50px;
+            border-left: $color-white solid 2px;
+            border-right: $color-white solid 2px;
+        }
+    }
+
+    &__sintomas{
+        width: 100%;
+        height: 79%;
+        padding: 50px 70px;
+        background-color: $color-blue-light;
+    }
+
+    &__medico, &__targifor{
+        padding: 15px;
+        margin-bottom: 15px;
+        width: 64%;
+        font-size: 1.1em;
+        border: $color-blue solid 2px;
+        color: $color-blue;
+        background-color: $color-white;
+    }
+    // &__targifor{
+    //     padding: 15px;
+    //     width: 64%;
+    //     font-size: 1em;
+    //     border: $color-blue solid 2px;
+    //     color: $color-blue;
+    //     background-color: $color-white;
+    // }
+
+    &__final{
+        margin-top: 2.5em;
+        font-size: 12px;
+        width: 52%;
+        color: $color-blue;
+    }
+}
