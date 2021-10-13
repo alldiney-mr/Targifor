@@ -15,10 +15,22 @@
         display: flex;
         flex-direction: column-reverse;
         background-color: $color-blue-light;
+
+        @media (min-width: $tablet-min){
+            margin-top: 0;
+            padding: 80px;
+            padding: 0;
+            flex-direction: column;
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+        
+        @media (min-width: $tablet-max){    
+        }
     }
     
     &__referencia{
-        padding: 20px 70px;
+        padding: 20px 80px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -32,14 +44,14 @@
         }
 
         @media (min-width: $tablet-min){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // padding-left: 10%;
         }
         
         @media (min-width: $tablet-max){
-            background-color: lighten($color-orange, 16%);
-            padding: 45px 70px;
-            color: $color-white;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
+            
         }
     }
     
@@ -48,9 +60,124 @@
         background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
     }
     
+    &__informacoes{
+        // height: 30em;
+        // background-color: blue;
+        width: 100%;
+        @media (min-width: $tablet-min){
+            border-right: $color-white solid 3px;
+        }
+        
+    }
     
     &__nav{
         display: none;
+        @media (min-width: $tablet-min){
+            display: flex;
+            height: 20%;  
+            justify-content: center;
+            // padding-left: 10%;
+            background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
+        }
+        
+        @media (min-width: $tablet-max){
+            width: 100%;
+            justify-content: left;
+            height: 15%;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        
+        @media (min-width: $tablet-max){
+            flex-direction: row;
+        }
+    }
+
+    &__item{
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: .8em;
+        text-align: center;
+        font-weight: 800;
+            
+        @media (min-width: $tablet-max){ 
+            align-self: center;
+            padding: 5px 70px;
+            &Borda{ 
+                // font-size: .8em;
+                // font-weight: 800;
+                // color: $color-white;
+                // text-transform: uppercase;
+                padding: 5 70px;
+                border-left: $color-white solid 2px;
+                border-right: $color-white solid 2px;
+            }
+        }
+
+        
+        
+        @media (min-width: $tablet-max){    
+            
+        }
+    }
+
+    &__navegation{
+        display: none;
+        @media (min-width: $tablet-min){
+            background: linear-gradient(90deg, lighten($color-blue, 16%) 2%, lighten($color-blue, 16%) 35%, lighten($color-blue, 1%) 100%);
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-self: center;
+        }
+        
+        @media (min-width: $tablet-max){ 
+            height: 15%;
+            // display: flex;
+            // justify-content: center;
+        }
+    }
+    &__link{
+        // display: inline-block;
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: .8em;
+        text-align: center;
+        font-weight: 800;
+        width: 100%;
+        &::before{
+            content: ">";
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            margin-right: 30px;
+            left: 20px;
+        }
+
+        @media (min-width: $tablet-min){    
+            position: relative;
+            top: 45%;
+        }
+    }
+
+    &__sintomas{
+        width: 100%;
+        height: 79%;
+        background-color: $color-blue-light;
+
+        @media (min-width: $tablet-min){  
+            padding: 15px;  
+            align-items: center;
+        }
+        
+        @media (min-width: $tablet-max){
+            padding: 40px 70px;   
+            width: 63%;
+        }
     }
     
     &__medico, &__targifor{
@@ -63,6 +190,10 @@
         border: $color-blue solid 2px;
         color: $color-blue;
         background-color: $color-white;
+        @media (min-width: $tablet-max){    
+            text-align: left;
+            font-size: .83em;
+        }
     }
     &__final{
         text-transform: uppercase;
@@ -71,11 +202,28 @@
         width: 100%;
         color: $color-blue;
         line-height: 20px;
+        @media (min-width: $tablet-max){    
+            text-align: left;
+            width: 85%;
+            margin-top: 30px;
+        }
     }
 
+
     &__contatos{
-        width: 100%;
         color: $color-white;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $tablet-min){  
+            padding: 15px;  
+            align-items: center;
+        }
+
+        @media (min-width: $tablet-max){ 
+            align-items: flex-end;   
+            margin: 20px 70px 10px 0;
+        }
     }
 
     &__atendimento{
@@ -84,12 +232,13 @@
         font-size: 10px;
         display: flex;
         align-items: center;
-    
+        width: 100%;
+        
         &Divisor{
             position: relative;
             margin-left: 20px;
         }
-    
+        
         &Logo{
             width: 20%;
             border-right: $color-white 2px solid;
@@ -97,6 +246,28 @@
         
         &Numero{
             font-size: 24px;
+        }
+
+        @media (min-width: $tablet-min){  
+            margin: 10px 0;  
+            &Numero{
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: $tablet-max){    
+            width: 55%;
+
+            &Logo{
+                width: 20%;
+                border-right: none;
+            }
+
+            &Divisor{
+                position: relative;
+                margin-left: 0;
+                padding: 10px;
+            }
         }
     }
                 
@@ -122,6 +293,26 @@
             padding: 20px 10px;
             border-right: $color-white 2px solid;
         }
+
+        @media (min-width: $tablet-min){  
+            line-height: none;
+            font-size: 12px;
+        }
+
+        @media (min-width: $tablet-max){    
+            width: 55%;
+
+            &Logo{
+                width: 20%;
+                border-right: none;
+            }
+
+            &Divisor{
+                position: relative;
+                margin-left: 0;
+                padding: 10px;
+            }
+        } 
     }
     &__copyright{
         width: 100%;
