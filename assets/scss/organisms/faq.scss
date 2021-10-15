@@ -1,0 +1,65 @@
+.faq{
+    padding: 100px;
+    padding: 3.5%;
+
+    @media (min-width: $tablet-min){
+        padding: 9%;;
+    }
+
+    &__titulo{
+        color: $color-blue;
+        font-size: 2em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 4%;
+    }
+
+    &__componentes{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $tablet-min){
+            flex-direction: row;
+        }
+    }
+
+    &__descricao{
+        margin: 20px 15px;
+        padding-left: 20px;
+        position: relative;
+        border-left: 2px solid lighten($color-orange, 5%);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__subtitulo{
+        color: lighten($color-blue, 10%);
+        width: 70%;
+        font-size: 4vh;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    &__texto{
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        line-height: 20px;
+        bottom: -10px;
+        @media (min-width: $tablet-min){
+            width: 85%;
+        }
+    }
+
+    &__botao{
+        padding: 10px;
+        margin: 20px;
+        margin-top: 5%;
+        border-radius: 35px;
+        background-color: lighten($color-orange, 5%);
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+}
