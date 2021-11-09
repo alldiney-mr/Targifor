@@ -1,0 +1,97 @@
+.banner{
+    // margin: 5em 0;
+    background: transparent linear-gradient(90deg, #77C9EF 0%, #0FA1CA 100%) 0% 0% no-repeat padding-box;   
+    width: 100%;
+    height: 45em;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $tablet-min){
+        
+    }
+
+    @media (min-width: $tablet-max){
+        margin: 5em 0;
+    }
+
+    &__borda{
+        width: 100%;
+        height: 60%;
+        margin: 7em 0;
+        position: absolute;
+        border: 2px solid #F47D31;
+        transform: skewX(-18deg);
+        padding: 0 2em;
+        // z-index: 2;
+        @media (min-width: $tablet-min){
+        
+        }
+
+        @media (min-width: $tablet-max){
+            margin: 5em 0;
+            width: 80%;
+            height: 60%;
+        }
+
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute; 
+        bottom: 40px;
+        // z-index: 2;
+        @media (min-width: $tablet-min){
+            
+        }
+    
+        @media (min-width: $tablet-max){
+            width: 95%;
+        }
+    }
+    
+    &__imagem{
+        height: 100%;
+        width: 120em;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        bottom: 0;
+        right: 100px;
+        transform: skewX(18deg);
+        z-index: 1;
+    }
+
+    &__text{
+        width: 70%;
+        display: inline-block;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-self: flex-end;
+        position: relative;
+        bottom: 250px;
+        color: $color-white;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+
+        ::before{
+            content: url(/assets/images/iconmais.png);
+            position: relative;
+            top: 25px;
+            right: 15px;
+        }
+
+        @media (min-width: $tablet-min){
+            
+        }
+    
+        @media (min-width: $tablet-max){
+            // font-size: 4em;
+            flex-direction: row;
+        }
+    }
+}
