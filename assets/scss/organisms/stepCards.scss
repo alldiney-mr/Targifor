@@ -19,22 +19,14 @@
 
     &__conjunto{
         padding: 40px calc(45px - 13px);
-<<<<<<< HEAD
         // position: absolute;
-=======
-        position: absolute;
->>>>>>> main
 
         @media (min-width: $tablet-min){
             padding: 0;
             display: flex;
             width: 100%;
             flex-direction: row;
-<<<<<<< HEAD
-            justify-content: space-between;
-=======
             justify-content: space-around;
->>>>>>> main
         }
     }
 
