@@ -1,0 +1,60 @@
+.cta{
+    font-family: 'Roboto', sans-serif;
+    margin: 5em;
+
+    &__topo{
+        width: 260px;
+        height: 40px;
+        background-color: $color-blue;
+        transform: skewX(-18deg);
+        border-radius: 3px;
+        padding: .5em;
+        margin-left: 40%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 17px;
+        right: 15px;
+        & img{
+            transform: skewX(18deg);
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__produto{
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        border-radius: 1em;
+        background-color: lighten($color-orange, 36%);
+
+        &-azul{
+            background-color: lighten($color-blue-light, 16%);
+        }
+    }
+
+    &__informacao{
+        display: flex;
+        flex-direction: row;
+
+        & div {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__comprar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &Imagem{
+            position: relative;
+            left: -45px;
+            margin: 35px 0;
+        }
+    }
+}
