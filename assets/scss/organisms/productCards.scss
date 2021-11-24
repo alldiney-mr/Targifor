@@ -1,0 +1,125 @@
+.productCards{
+    padding: 7%;
+    font-family: 'Roboto', sans-serif;
+
+    &__titulo{
+        color: $color-blue;
+        font-size: 2.5em;
+        font-weight: 900;
+        text-transform: uppercase;
+        // margin-bottom: 4%;
+    }
+
+    &__produto{
+        height: 100%;
+        background-color: lighten($color-blue-light, 28%);
+        border: solid 2.5px lighten($color-blue-light, 20%);
+        border-radius: 20px;
+        padding: 2em;
+        margin: 3em 0;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $tablet-min){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1em 200px;
+        }
+    }
+
+    &__imagem{
+        width: 282px - 100px;
+        height: 368px - 100px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        left: -20px;
+
+        @media (min-width: $tablet-min){
+            top: 30px;
+            margin-left: -1%;
+        }
+
+        &-2{
+            position: relative;
+            // left: 200px;
+            // top: -20px;
+        }
+
+        &-3{
+            position: relative;
+            left: -35px;
+        }
+    }
+
+    &__informacoes{
+        @media (min-width: $tablet-min){
+            padding: 0 1em;
+            width: 70%;
+        }
+    }
+    
+    &__botoes{
+        margin-top: 30px;
+    }
+    &__botao{
+        padding: 5px 25px;
+        border: solid 2px $color-blue;
+        border-radius: 20px;
+        color: $color-blue;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        &-laranja{
+            margin-left: 10px;
+            border: solid 2px $color-orange;
+            color: $color-orange;
+        }
+    }
+
+    &__subtitulo{
+        margin: 20px 0;
+        color: $color-blue;
+        font-size: 1.5em;
+        font-weight: bold;
+
+        @media (min-width: $tablet-min){
+            font-size: 2.5em;
+            width: 80%;
+        }
+    }
+
+    &__descricao{
+        font-size: 1em;
+
+        @media (min-width: $tablet-min){
+            font-size: 1.3em;
+        }
+    }
+
+    &__comprar{
+        display: block;
+        margin: 35px auto;
+        padding: 5px 25px;
+        border: solid 2px $color-orange;
+        border-radius: 20px;
+        color: $color-white;
+        background-color: $color-orange;
+        font-weight: bold;
+        width: 90%;
+
+        & span {
+            margin-left: 10px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            top: -5px;
+        }
+
+        @media (min-width: $tablet-max){
+            width: 30%;
+            margin-left: 0;
+        }
+    }
+}
