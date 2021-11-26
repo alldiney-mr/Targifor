@@ -1,0 +1,114 @@
+.slideContent{
+    padding: 2em 7%;
+    font-family: 'Roboto', sans-serif;
+    background-color: lighten($color-blue-light, 24%);
+
+    @media (min-width: $tablet-min){
+        padding: 2em 5%;
+     }
+
+    .invisivelMobile{
+        display: none;
+        @media (min-width: $tablet-max){
+           display: block;
+        }
+    }
+
+    &__titulo{
+        color: $color-blue;
+        font-size: 2.5em;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 4%;
+        padding: 0 5%;
+    }
+
+    // &__seta{
+    //     position: relative;
+
+    //     &-esquerda{
+    //         top: 250px;
+    //     }
+
+    //     &-direita{
+    //         top: -86vw;
+    //         right: -80vw;
+            
+    //     }
+    // }
+
+    &__cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // margin: 0 -6em;
+        width: 100%;
+        height: 100%;
+
+        &::before, &::after{
+            position: relative;
+            top: 180px;
+        }
+        &::before{
+            content: url(/assets/images/elemntos/seta-esquerda.svg);
+        }
+        &::after{
+            content: url(/assets/images/elemntos/seta-direita.svg);
+        }
+    }
+
+    &__card{
+        width: 446px - 40px;
+        margin: 0 20px;
+    }
+
+    &__imagem{
+        width: 100%;
+    }
+
+    &__subtitulo{
+        margin: 20px 0;
+        color: $color-blue;
+        font-size: 1.7em;
+        letter-spacing: .5px;
+        font-weight: bold;
+        width: 60%;
+
+        @media (min-width: $tablet-min){
+            // font-size: 2em;
+            width: 80%;
+        }
+    }
+
+    &__descricao{
+        font-size: 1.3em;
+        height: 151px;
+    }
+
+    &__saibaMais{
+        display: block;
+        margin: 35px auto;
+        padding: 1px 25px;
+        border: solid 2px $color-orange;
+        border-radius: 20px;
+        color: $color-white;
+        background-color: $color-orange;
+        font-weight: bold;
+        width: 80%;
+        height: 2.5em;
+        font-size: 15px;
+
+        // & span {
+        //     margin-left: 10px;
+        //     font-family: 'Roboto', sans-serif;
+        //     text-transform: uppercase;
+        //     position: relative;
+        //     top: -5px;
+        // }
+
+        @media (min-width: $tablet-max){
+            width: 204px - 30px;
+            margin-left: 0;
+        }
+    }
+}
