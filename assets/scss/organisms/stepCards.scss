@@ -1,21 +1,21 @@
 .stepCards{
-    padding: 0 13px;
+    // padding: 0 13px;
     font-family: 'Roboto', sans-serif;
-    @media (min-width: $tablet-min){
-        padding: 40px 100px;
-    }
+    // @media (min-width: $tablet-min){
+    //     padding: 40px 100px;
+    // }
 
-    &__titulo{
-        width: 202px;
-        height: 84px;
-        font-size: 36px;
-        text-transform: uppercase;
-        color: $color-blue;
+    // &__titulo{
+    //     width: 202px;
+    //     height: 84px;
+    //     font-size: 36px;
+    //     text-transform: uppercase;
+    //     color: $color-blue;
 
-        @media (min-width: $tablet-min){
-            width: 100%;
-        }
-    }
+    //     @media (min-width: $tablet-min){
+    //         width: 100%;
+    //     }
+    // }
 
     &__conjunto{
         padding: 40px calc(45px - 13px);

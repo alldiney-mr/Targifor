@@ -1,15 +1,15 @@
 .collapse{
     font-family: 'Roboto', sans-serif;
     margin-top: 5em;
-    padding: 2em 7%;
+    // padding: 2em 7%;
 
-    &__titulo{
-        color: $color-blue;
-        font-size: 2.5em;
-        font-weight: 900;
-        text-transform: uppercase;
-        margin-bottom: 4%;
-    }
+    // &__titulo{
+    //     color: $color-blue;
+    //     font-size: 2.5em;
+    //     font-weight: 900;
+    //     text-transform: uppercase;
+    //     margin-bottom: 4%;
+    // }
 
     &__componente{
         background-color: lighten($color-blue-light, 23%);
