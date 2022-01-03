@@ -34,11 +34,12 @@
     &__conteiner{
         display: flex;
         flex-direction: column;
-        padding: 2em 7%;
+        padding-top: 2em;
+        padding-bottom: 2em;
 
         @media (min-width: $tablet-min){
             flex-direction: row;
-            padding: 2em 7%;
+            // padding: 2em 0;
         }
     }
 
