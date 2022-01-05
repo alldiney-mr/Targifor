@@ -2,35 +2,52 @@
     font-family: 'Roboto', sans-serif;
     // margin: 5em;
 
-    &__topo{
+    &__primeiro{
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-end;
+    }
+
+    &__header{
+        display: flex;
+        justify-content: flex-end;
         position: relative;
-        // top: 1px;
-        right: -60px;
-        width: 30%;
-        width: 310px;
+
+        &-end{
+            @media (min-width: $tablet-max){ 
+                margin-top: 10em;
+                // width: 30rem;
+                right: -20px;
+            }
+        }
+        &-start{
+            @media (min-width: $tablet-max){ 
+                margin-top: 5em;
+                justify-content: flex-start;
+                left: 90px;
+            }
+        }
+        
+    }
+
+    &__topo{
+        width: 14.5rem;
         height: 40px;
-        background-color: $color-blue;
-        transform: skewX(-18deg);
-        border-radius: 2px;
         padding: .7em;
-        // margin-left: 40%;
-        margin: 0 auto;
+        background-color: $color-blue;
+        border-radius: 2px;
+        transform: skewX(-18deg);
         display: flex;
         justify-content: space-around;
         align-items: center;
-        // & img{
-        //     transform: skewX(18deg);
-        //     width: 100%;
-        //     height: 100%;
-        // }
+        position: relative;
+        right: 10px;
+
         @media (min-width: $tablet-max){ 
-            right: 0;
+            width: 22rem;
         }
+        
         & p{
-            // display: inline-block;
-            // margin: auto;
-            // width: 100%;
-            // height: 100%;
             position: relative;
             transform: skewX(18deg);
             text-transform: uppercase;
@@ -38,17 +55,24 @@
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             margin-left: 25px;
-            // background-color: red;
+            font-size: .8rem;
+            @media (min-width: $tablet-max){ 
+                margin-left: 10px;
+                font-size: 1rem;
+            }
         }
         & span {
             display: inline-block;
-            font-size: 1.5em;
+            // font-size: 1.5em;
             color: $color-orange;
             position: absolute;
             left: -25px;
             top: -9px;
-            font-size: 2em;
+            font-size: 1.7rem;
             transform: skewX(-8deg);
+            @media (min-width: $tablet-max){ 
+                font-size: 2rem;
+            }
         }
 
         &-menor{
@@ -57,8 +81,29 @@
         }
     }
 
+    &__logo{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        @media (min-width: $tablet-max){ 
+            width: 17rem;
+        }
+    }
+
+    &__container{
+        @media (min-width: $tablet-max){ 
+            transform: skewX(18deg);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+        }
+    }
+
     &__produto{
-        // margin: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -69,16 +114,77 @@
         &-azul{
             background: $color-blue-light;
         }
+
+        @media (min-width: $tablet-max){ 
+            transform: skewX(-18deg);
+            position: relative;
+            right: -50px;
+            width: 90%;
+            width: 58rem;
+            margin: 0 auto;
+        }
     }
 
     &__informacao{
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
+        width: 280px;
+        margin: 0 auto;
+        // height: 1.5em;
+        // flex-direction: row;
+        @media (min-width: $tablet-max){ 
+            display: flex;
+            align-items: center;
+            width: 27rem;
+            margin: 0;
+        }
 
         & div {
             display: flex;
             flex-direction: row;
         }
+
+        & p{
+            text-transform: uppercase;
+            color: $color-blue-dark;
+            font-weight: bold;
+            font-size: 1.1em;
+            // display: block;
+
+            @media (min-width: $tablet-max){ 
+                font-size: 1.3em;
+            }
+        }
+
+        & img{
+            height: 20px;
+            margin-right: 5px;
+            // display: block;
+
+            @media (min-width: $tablet-max){ 
+                margin-right: 15px;
+            }
+        }
+    }
+    
+    &__arginina, &__vitamina{
+        display: flex;
+        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+
+        @media (min-width: $tablet-max){ 
+            margin-bottom: 0;
+        }
+    }
+
+    &__seta{
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: $color-orange;
+        font-weight: bold;
+        font-size: 1.1em;
     }
 
     &__comprar{
@@ -88,8 +194,55 @@
 
         &Imagem{
             position: relative;
+            left: -2.3rem;
             left: -45px;
             margin: 35px 0;
+
+            &2{
+                height: 14.063rem;
+                left: -55px;
+            }
+
+            @media (min-width: $tablet-max){
+                position: absolute; 
+                // left: -390px;
+                left: -270px;
+                height: 14.5rem;
+                top: -100px;
+            }
+        }
+
+        &Imagem2{
+            @media (min-width: $tablet-max){
+                position: absolute; 
+                left: 570px;
+            }
+        }
+    }
+
+    &__botao{
+
+        @media (min-width: $tablet-max){
+            // width: 10%;
+            margin-top: 1.5em;
+            position: relative;
+            left: -20px;
+        }
+        
+    }
+}
+
+.ocultar{
+    &__mobile-tablet{
+        display: none;
+        @media (min-width: $tablet-max){ 
+            display: block;
+        }
+    }
+
+    &__tablet-mobile{
+        @media (min-width: $tablet-max){ 
+            display: none;
         }
     }
 }
