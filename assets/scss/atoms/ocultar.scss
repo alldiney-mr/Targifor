@@ -1,0 +1,15 @@
+
+.ocultar{
+   &__mobile-tablet{
+       display: none;
+       @media (min-width: $tablet-max){ 
+           display: block;
+       }
+   }
+
+   &__tablet-mobile{
+       @media (min-width: $tablet-max){ 
+           display: none;
+       }
+   }
+}

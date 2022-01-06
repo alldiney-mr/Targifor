@@ -2,6 +2,14 @@
     font-family: 'Roboto', sans-serif;
     // margin: 5em;
 
+    &__centralizar{
+        @media (min-width: $tablet-max){ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     &__primeiro{
         display: flex;
         flex-direction: column;
@@ -17,14 +25,14 @@
             @media (min-width: $tablet-max){ 
                 margin-top: 10em;
                 // width: 30rem;
-                right: -20px;
+                left: 50px;
             }
         }
         &-start{
             @media (min-width: $tablet-max){ 
                 margin-top: 5em;
                 justify-content: flex-start;
-                left: 90px;
+                right: -90px;
             }
         }
         
@@ -85,8 +93,16 @@
         display: block;
         margin: 0 auto;
         width: 70%;
+        width: 10rem;
         @media (min-width: $tablet-max){ 
             width: 17rem;
+        }
+
+        &2{
+            @media (min-width: $tablet-max){ 
+               position: relative;
+               right: 50px;
+            }
         }
     }
 
@@ -111,10 +127,7 @@
         border-radius: 1em;
         background: $color-orange-light;
 
-        &-azul{
-            background: $color-blue-light;
-        }
-
+        
         @media (min-width: $tablet-max){ 
             transform: skewX(-18deg);
             position: relative;
@@ -122,6 +135,13 @@
             width: 90%;
             width: 58rem;
             margin: 0 auto;
+        }
+        &-azul{
+            background: $color-blue-light;
+            @media (min-width: $tablet-max){ 
+                width: 50rem;
+                left: -30px;
+            }
         }
     }
 
@@ -179,12 +199,27 @@
         }
     }
 
+    &__arginina{
+        &2{
+            @media (min-width: $tablet-max){ 
+                position: relative;
+                left: -130px;
+            }
+        }
+    }
+
     &__seta{
         font-family: sans-serif;
         text-transform: uppercase;
         color: $color-orange;
         font-weight: bold;
         font-size: 1.1em;
+        &2{
+            @media (min-width: $tablet-max){ 
+                position: absolute;
+                left: 220px;
+            }
+        }
     }
 
     &__comprar{
@@ -215,7 +250,14 @@
         &Imagem2{
             @media (min-width: $tablet-max){
                 position: absolute; 
-                left: 570px;
+                left: 485px;
+            }
+        }
+
+        &2{
+            @media (min-width: $tablet-max){
+                position: relative;
+                left: -160px;
             }
         }
     }
@@ -229,20 +271,5 @@
             left: -20px;
         }
         
-    }
-}
-
-.ocultar{
-    &__mobile-tablet{
-        display: none;
-        @media (min-width: $tablet-max){ 
-            display: block;
-        }
-    }
-
-    &__tablet-mobile{
-        @media (min-width: $tablet-max){ 
-            display: none;
-        }
     }
 }
